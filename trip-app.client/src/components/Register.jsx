@@ -4,7 +4,7 @@ function Register() {
 
     document.title = "Register";
 
-    // dont ask an already registered user to register over and over again
+
     useEffect(() => {
         const user = localStorage.getItem("user");
         if (user) {
@@ -54,7 +54,7 @@ function Register() {
             dataToSend[key] = value;
         }
 
-        // create username
+    
         const newUserName = dataToSend.Name.trim().split(" ");
         dataToSend.UserName = newUserName.join("");
 

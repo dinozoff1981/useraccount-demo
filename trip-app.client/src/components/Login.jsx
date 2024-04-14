@@ -4,7 +4,7 @@ function Login() {
 
     document.title = "Login";
 
-    // dont ask an already logged in user to login over and over again
+    
     useEffect(() => {
         const user = localStorage.getItem("user");
         if (user) {
